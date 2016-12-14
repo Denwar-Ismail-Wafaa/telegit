@@ -34,8 +34,13 @@
 		case 'What is your name?':
 			file_get_contents($website."/sendmessage?chat_id=".$chatId."&text=My name is WafismaBot");
 			break;
+			
 
 		case '/mypassword':
+			file_get_contents($website."/sendmessage?chat_id=".$chatId."&text=Please that is not allowed");
+			break;
+			
+					case '/login':
 			file_get_contents($website."/sendmessage?chat_id=".$chatId."&text=Please that is not allowed");
 			break;
 		default:
