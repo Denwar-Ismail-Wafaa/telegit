@@ -24,6 +24,13 @@
 		case '/test':
 			file_get_contents($website."/sendmessage?chat_id=".$chatId."&text=Test ".$clientName);
 			break;
+			
+			case '/getmovie':
+			file_get_contents($website."/sendmessage?chat_id=".$chatId."&text=here are the movies ".$clientName);
+			break;
+		case '/mymoivie':
+			file_get_contents($website."/sendmessage?chat_id=".$chatId."&text=no movies ".$clientName);
+			break;
 		case 'What is your name?':
 			file_get_contents($website."/sendmessage?chat_id=".$chatId."&text=My name is WafismaBot");
 			break;
